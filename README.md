@@ -4,6 +4,7 @@ Eslint plugin that helps to improve debugging components wrapped by `React.memo(
 
 ## Motivation
 
+![alt text](https://raw.githubusercontent.com/patrykkopycinski/eslint-plugin-no-memo-displayname/master/assets/anonymous-memo.png "motivation")
 
 
 ### Bad
@@ -54,9 +55,6 @@ $ npm install eslint-plugin-no-memo-displayname --save-dev
 If you want to make sure that all your components have proper `displayName` I highly recommend to use [react/display-name](https://github.com/yannickcr/eslint-plugin-react/blob/master/docs/rules/display-name.md) rule from [eslint-plugin-react](https://github.com/yannickcr/eslint-plugin-react).
 
 **Note:** If you installed ESLint globally (using the `-g` flag) then you must also install `eslint-plugin-no-memo-displayname` globally.
-
-
-
 
 
 ## LICENSE
