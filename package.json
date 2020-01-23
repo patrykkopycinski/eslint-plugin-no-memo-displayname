@@ -1,0 +1,53 @@
+{
+  "name": "eslint-plugin-no-memo-displayname",
+  "version": "0.0.1",
+  "description": "Eslint plugin that helps to improve debugging components wrapped by React.memo()",
+  "main": "lib/index.js",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/patrykkopycinski/eslint-plugin-no-memo-displayname.git"
+  },
+  "author": {
+    "name": "Patryk Kopycinski",
+    "email": "contact@patrykkopycinski.com",
+    "url": "https://github.com/patrykkopycinski"
+  },
+  "scripts": {
+    "clean": "rimraf lib",
+    "build": "tsc",
+    "test": "jest",
+    "lint": "eslint src/rules/no-memo-displayname.ts",
+    "prepublish": "npm run clean && npm run build"
+  },
+  "files": [
+    "README.md",
+    "package.json",
+    "lib"
+  ],
+  "keywords": [
+    "eslint",
+    "react",
+    "memo",
+    "displayname",
+    "devtools",
+    "anonymous"
+  ],
+  "license": "MIT",
+  "devDependencies": {
+    "@types/eslint": "^6.1.3",
+    "@types/node": "^13.1.8",
+    "@typescript-eslint/parser": "^2.17.0",
+    "@typescript-eslint/experimental-utils": "^2.17.0",
+    "eslint": "^6.8.0",
+    "eslint-plugin-eslint-plugin": "^2.2.1",
+    "jest": "^24.9.0",
+    "react": "^16.12.0",
+    "rimraf": "^2.6.3",
+    "ts-jest": "^24.3.0",
+    "typescript": "^3.7.5"
+  },
+  "dependencies": {},
+  "peerDependencies": {
+    "eslint": "^4.0.0 || ^5.0.0 || ^6.0.0"
+  }
+}
